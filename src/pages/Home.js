@@ -243,6 +243,19 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* <section className='famous-wrapper py-5 home-wrapper-2'>
+        <div className='container-xl'>
+          <div className='row'>
+            <div className="col-3">
+              <div className="famous-card bg-dark">
+                <h5>BIG SCREEN</h5>
+                <h6>Smart Watch Series 7</h6>
+                <p>From $399 or $16.62/mo. for 24 mo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
       <section className='speacial-wrapper py-5 home-wrapper-2'>
         <div className='container-xl'>
           <div className='row'>
@@ -261,6 +274,10 @@ const Home = () => {
             <div className='col-12'>
               <h3 className='section-heading'>Our Popular Products</h3>
             </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </div>
       </section>

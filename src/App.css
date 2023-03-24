@@ -31,6 +31,11 @@ a {
   display: inline-block;
 }
 
+button {
+  border: 0;
+  background-color: white;
+}
+
 .form-control:focus {
   box-shadow: none;
   border-color: inherit;
@@ -231,6 +236,10 @@ footer .input-group-text {
   overflow: hidden;
 }
 
+.featured-image > img {
+  max-height: 269px;
+}
+
 .featured-image > img:last-child,
 .featured-image:hover > img:first-child
 {
@@ -327,3 +336,122 @@ footer .input-group-text {
   color: var(--color-date);
 }
 /* Home Page Ends Here */
+
+/* OurStore Page */
+.filter-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 15px 25px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px #00001a53;
+}
+
+.filter-card_title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-description);
+  margin-bottom: 20px;
+}
+
+.filter-card_choice,
+.form-check-label {
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-date);
+  cursor: pointer;
+}
+
+.filter-card_subtitles {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-description);
+  margin: 25px 0 15px;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+  border-color: var(--color-orange);
+}
+
+.form-check-input:checked {
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+.filter-card_colors {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-card_colors li {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-title);
+  border-radius: 50%;
+}
+
+.product-random {
+  border-bottom: 1px solid #ededed;
+}
+
+.product-random h5 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.filter-sort-grid {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.filter-sort_image {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.filter-sort_image:hover,
+.filter-sort_image:focus {
+  background-color: #dcd0c1;
+  filter: invert(100%);
+  transition: 0.3s;
+  border-radius: 30%;
+}
+
+.products-list a {
+  width: 100%;
+}
+
+.products-list .col-3 {
+  width: 24%;
+}
+
+.products-list .col-4 {
+  width: 32%;
+}
+
+.products-list .col-6 {
+  width: 48.5%;
+}
+
+.products-list .col-12 .featured-card {
+  display: flex;
+  gap: 20px;
+}
+
+.featured-details-description {
+  text-align: justify;
+  width: 90%;
+  font-size: 13px;
+  color: var(--color-date);
+}
+
+/* OurStore Page Ends Here*/

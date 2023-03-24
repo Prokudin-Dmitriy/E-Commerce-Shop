@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactStars from 'react-rating-stars-component';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const ProductCard = () => {
+const ProductCard = (props) => {
+  const { grid } = props;
+  const { desc } = props;
+  let location = useLocation();
+
   return (
-    <div className='col-3'>
+    <div
+      className={`${location.pathname === '/store' ? `col-${grid}` : 'col-3'}`}
+    >
       <Link>
         <div className='featured-card position-relative mb-3'>
           <div className='featured-wishlist-icon position-absolute'>
@@ -12,12 +18,12 @@ const ProductCard = () => {
               <img src='images/wish.svg' alt='wish' />
             </button>
           </div>
-          <div className='featured-image'>
+          <div className='featured-image img-fluid d-flex justify-content-center'>
             <img src='images/watch.jpg' alt='product' />
-            <img src='images/watch-2.jpg' alt='product' height='269' />
+            <img src='images/watch-2.jpg' alt='product' />
           </div>
           <div className='featured-details'>
-            <h6 className='featured-details-brand'>Havels</h6>
+            <h6 className='featured-details-brand'>Havells</h6>
             <h6 className='featured-details-title'>
               Kids headphones bulk 10 pack multi colored for students
             </h6>
@@ -28,7 +34,14 @@ const ProductCard = () => {
               edit={false}
               activeColor='#ffd700'
             />
-            <p className='featured-details-price'>$100</p>
+            {`col-${grid}` === 'col-12' ? (
+              <div>
+                <p className='featured-details-description'>{desc}</p>
+              </div>
+            ) : (
+              ''
+            )}
+            <p className='featured-details-price'>$199.00</p>
           </div>
           <div className='featured-action-bar position-absolute'>
             <div className='d-flex flex-column gap-15'>
