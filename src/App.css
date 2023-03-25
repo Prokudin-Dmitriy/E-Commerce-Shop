@@ -511,4 +511,31 @@ footer .input-group-text {
   color: white;
 }
 
+.pass-card_title {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: var(--color-date);
+  margin-bottom: 15px;
+}
+
+.pass-card_desc {
+  font-size: 14px;
+  text-align: center;
+  color: var(--color-date);
+  margin-bottom: 12px;
+}
+
+.pass-card_cancel {
+  color: var(--color-blue);
+  transition: 0.3s;
+}
+
+.pass-card_cancel:hover {
+  color: var(--color-orange);
+  text-shadow: 0 0 1px #131921;
+}
+
+
 /* Login page ends*/

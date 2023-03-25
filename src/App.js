@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import OurStore from './pages/OurStore';
 import Login from './pages/Login';
+import Forgotpass from './pages/Forgotpass';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path='contact' element={<Contact />} />
             <Route path='store' element={<OurStore />} />
             <Route path='login' element={<Login />} />
+            <Route path='forgot-password' element={<Forgotpass />} />
           </Route>
         </Routes>
       </BrowserRouter>
