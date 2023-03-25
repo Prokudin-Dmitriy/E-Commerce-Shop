@@ -58,7 +58,7 @@ button {
 }
 
 .button {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-blue);
   color: white;
   font-size: 14px;
   padding: 13px 33px;
@@ -455,3 +455,60 @@ footer .input-group-text {
 }
 
 /* OurStore Page Ends Here*/
+
+/* Login page */
+.login-card {
+  width: 470px;
+  padding: 20px;
+  margin: 30px 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #00001a53;
+}
+
+.login-card_title {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-date);
+  margin-bottom: 15px;
+}
+
+.login-card .form-control {
+  height: 50px;
+  font-size: 14px;
+  background-color: #eeeeee;
+  color: var(--color-date);
+  border-radius: 10px;
+  border-color: transparent;
+  transition: 0.5s;
+}
+
+.login-card .form-control:hover,
+.login-card .form-control:focus {
+  border-color: #bebebe;
+}
+
+.login-card_pass {
+  color: #212529;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.login-card_pass:hover,
+.login-card_pass:focus {
+  color: var(--color-orange);
+  transition: 0.3s;
+}
+
+.login-card_signup {
+  background-color: var(--color-orange);
+  color: var(--color-dark-blue);
+}
+
+.login-card_signup:hover {
+  background-color: var(--color-blue);
+  color: white;
+}
+
+/* Login page ends*/
