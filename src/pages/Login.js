@@ -35,7 +35,7 @@ const Login = () => {
                     <Link to='/forgot-password' className='login-card_pass mb-4'>Forgot your password?</Link>
                     <div className='d-flex justify-content-center align-items-center gap-15'>
                       <button className='button'>Log In</button>
-                      <Link className='button login-card_signup'>Sign Up</Link>
+                      <Link to='/signup' className='button login-card_signup'>Sign Up</Link>
                     </div>
                   </div>
                 </form>
