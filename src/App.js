@@ -9,6 +9,7 @@ import OurStore from './pages/OurStore';
 import Login from './pages/Login';
 import Forgotpass from './pages/Forgotpass';
 import Signup from './pages/Signup';
+import Resetpass from './pages/Resetpass';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path='login' element={<Login />} />
             <Route path='forgot-password' element={<Forgotpass />} />
             <Route path='signup' element={<Signup />} />
+            <Route path='reset-password' element={<Resetpass />} />
           </Route>
         </Routes>
       </BrowserRouter>
